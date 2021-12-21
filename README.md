@@ -45,6 +45,8 @@ Import errno
 Import Queue
 - Implements Queues in Threading
 - Reference: https://docs.python.org/3/library/queue.html
+- *"Queue is a data structure that will help us to manage the access of multiple threads on a single resource, which in our case will be the port numbers. Since our threads run simultaneously and scan the ports, we use queues to make sure that every port is only scanned once"*
+- Reference: https://www.neuralnine.com/threaded-port-scanner-in-python/
 
 Ensure host can be resolved to IP
 - NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
@@ -72,3 +74,5 @@ https://www.geeksforgeeks.org/python-sys-module/
 https://pretagteam.com/question/portscan-with-python
 
 https://docs.python.org/3/library/queue.html
+
+https://www.neuralnine.com/threaded-port-scanner-in-python/
