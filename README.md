@@ -5,6 +5,8 @@ This project aims to create a program that will allow the user to input an IP ad
 
 Furthermore, this project will attempt to use modules available in Python to allow the user to scan not just by IP, but also by host-name, by way of DNS resolution.
 
+Research has shown that this project is quite a common one for students world-wide and there is an abundance of knowledge / code online. Therefore, this project does not aim to re-invent the wheel or write previously unknown code, but more-so to gain an understanding of the Python language, the available code out there and to be able to honestly say "This is how it works, this actually makes sense to me".
+
 Initial research shows that scanning ports can be time consuming, especially if a large range of ports are to be scanned. This time delay can be over-come using threading.
 
 
