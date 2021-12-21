@@ -6,3 +6,13 @@
 import threading
 import socket
 
+# Entering the hostname / IP
+hostip = input("Please enter the Hostname of IP of target to scan: ")
+
+# Ensure the hostname can be resolved (To an IPv4, see readme.me for code for IPv6 resolution)
+hostipresolve = socket.gethostbyname(hostip)
+
+# print(hostipresolve)
+# This was used to check that the hostname did actually resolve before going further
+
+
