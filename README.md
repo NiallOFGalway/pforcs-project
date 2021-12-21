@@ -27,7 +27,11 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 - https://www.knowledgehut.com/tutorials/python-tutorial/python-socket-module
 
 
-
+## Writing the Code ##
+1) Import Threading
+- Explained Above
+2) Import Sockets
+- Explained Above
 
 
 
