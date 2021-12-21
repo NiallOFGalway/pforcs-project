@@ -1,7 +1,7 @@
 # Programming for CyberSecurity - Project - Niall O Flaherty 
 Port Scanner using Python
 
-This project aims to create a program that will allow the user to input an IP address and port number to check if the post is open on the target device. As there are 1024 (0 - 1023, although 0 would not be considered a valid port hence 'reserved') known ports and a total of 65535 ports in range, this project will attempt to allow the user to enter a port range and scan the range.
+This project aims to create a program that will allow the user to input an IP address and port number to check if the post is open on the target device. As there are 1024 (0 - 1023, although 0 would not be considered a valid port when scanning) well-known ports and a total of 65535 registered ports in range, this project will attempt to allow the user to enter a port range and scan the range.
 
 Furthermore, this project will attempt to use modules available in Python to allow the user to scan not just by IP, but also by host-name, by way of DNS resolution.
 
