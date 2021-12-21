@@ -28,21 +28,23 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 
 
 ## Writing the Code ##
-1) Import threading
+Import threading
 - Explained Above
 
-2) Import sockets
+Import sockets
 - Explained Above
 
-3) Import sys
+Import sys
 - Modules used in Python which provides various fuctions and variables
 - Reference: https://www.geeksforgeeks.org/python-sys-module/
 
-4) Import errno
+Import errno
 - Module which defines a number of error codes in Python
 - Reference: https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.html
 
-5) Ensure host can be resolved to IP
+Import Queue
+
+Ensure host can be resolved to IP
 - NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
 - Reference: https://pythontic.com/modules/socket/gethostbyname
 
