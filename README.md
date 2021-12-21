@@ -43,6 +43,8 @@ Import errno
 - Reference: https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.html
 
 Import Queue
+- Implements Queues in Threading
+- Reference: https://docs.python.org/3/library/queue.html
 
 Ensure host can be resolved to IP
 - NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
@@ -68,3 +70,5 @@ https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.
 https://www.geeksforgeeks.org/python-sys-module/
 
 https://pretagteam.com/question/portscan-with-python
+
+https://docs.python.org/3/library/queue.html
