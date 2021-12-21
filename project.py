@@ -1,3 +1,8 @@
+## Author: Niall O Flaherty
+## Programming for CyberSecuity - Project
+## This project attempts to write a port scanner which will allow the user to enter an IP (and potentially hostname),
+## along with either a port (or range of ports). The output will inform the user of open TCP ports on the target address / host
+
 import socket
 import threading
 
@@ -7,14 +12,14 @@ print_lock = threading.Lock()
 queue = Queue() # Defining the Queue for threader
 
 # Entering the hostname / IP
-targetip = input("Please enter the Hostname of IP of target to scan: ")
+targetip = input("Please enter the Hostname or IP (v4) of target to scan: ")
 
 # Ensure the hostname can be resolved (To an IPv4, see readme.me for code for IPv6 resolution)
 hostipresolve = socket.gethostbyname(targetip)
 
 # Choosing the first and last port to scan
-startport = input("Please choose first port to scan: ")
-endport = input("Please enter the last port to scan: ")
+startport = input("Please choose first TCP port to scan: ")
+endport = input("Please enter the last TCP port to scan. Add 1 to your last port ie. if last port is 100, enter 101: ")
 
 
 def portscanner(port):
