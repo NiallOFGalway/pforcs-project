@@ -46,6 +46,11 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 - NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
 - Reference: https://pythontic.com/modules/socket/gethostbyname
 
+6) Define Start & End port for the scan
+
+7) Use RANGE function so that the program knows to scan the whole range of ports
+
+8) Create a Socket (NOTE: Socket Family AF_INET = IPv4, Socket Type SOCK_STREAM = TCP, Socket Type SOCK_DGRAM = UDP)
 
 
 ## REFERECES
@@ -59,3 +64,5 @@ https://pythontic.com/modules/socket/gethostbyname
 https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.html
 
 https://www.geeksforgeeks.org/python-sys-module/
+
+https://pretagteam.com/question/portscan-with-python
