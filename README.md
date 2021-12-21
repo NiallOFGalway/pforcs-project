@@ -32,6 +32,10 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 - Explained Above
 2) Import Sockets
 - Explained Above
+3) Ensure host can be resolved to IP
+- NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code:
+- gethostbyname()
+- Reference: https://pythontic.com/modules/socket/gethostbyname
 
 
 
@@ -40,3 +44,5 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 https://www.geeksforgeeks.org/threaded-port-scanner-using-sockets-in-python/
 
 https://www.knowledgehut.com/tutorials/python-tutorial/python-socket-module
+
+https://pythontic.com/modules/socket/gethostbyname
