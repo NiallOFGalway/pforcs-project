@@ -10,7 +10,7 @@ Initial research shows that scanning ports can be time consuming, especially if 
 
 **WHAT IS THREADING?**
 
-* *"Threading is a complex topic, but it can be broken down and conceptualized as a methodology where we can tell the computer to do another task if the processor is experiencing idle time. In the case of port scanning, we are spending a lot of time just waiting on the response from the server. While we are waiting, we can do something else. That is what threading is used for"* *
+*"Threading is a complex topic, but it can be broken down and conceptualized as a methodology where we can tell the computer to do another task if the processor is experiencing idle time. In the case of port scanning, we are spending a lot of time just waiting on the response from the server. While we are waiting, we can do something else. That is what threading is used for"*
 - https://www.geeksforgeeks.org/threaded-port-scanner-using-sockets-in-python/
 
 
@@ -21,7 +21,7 @@ Further research regarding Port Scanners using Python refer to 'Sockets' and usi
 
 A basic networking definition of a Socket is: IP Address + Port = Socket. Instantly, this makes sense as to perform a port scan, you need both a target IP address and a port to scan.
 
-* *"Python's standard library consists of various built-in modules that support interprocess communication and networking. The network access is available at two levels. The 'socket' module defines how server and client machines can communicate at hardware level using socket endpoints on top of the operating system"* *
+*"Python's standard library consists of various built-in modules that support interprocess communication and networking. The network access is available at two levels. The 'socket' module defines how server and client machines can communicate at hardware level using socket endpoints on top of the operating system"*
 - https://www.knowledgehut.com/tutorials/python-tutorial/python-socket-module
 
 
