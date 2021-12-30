@@ -53,7 +53,7 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 - If the port is open, list it. If not, just pass and don't output any text
 
 
-6) Deine the threader
+6) Define the threader
 - When the task is complete, empty the Q created
 
 
@@ -83,3 +83,11 @@ https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.
 https://www.geeksforgeeks.org/python-sys-module/
 
 https://pretagteam.com/question/portscan-with-python
+
+https://www.journaldev.com/16152/python-daemon-thread
+
+https://docs.python.org/3/library/threading.html
+
+https://stackoverflow.com/questions/27200674/python-queue-join
+
+https://stackoverflow.com/questions/42401108/when-is-queue-join-necessary
