@@ -33,14 +33,18 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 1) Import threading
 - Explained Above
 
+
 2) Import sockets
 - Explained Above
+
 
 3) Enter Host / IPv4 of target. Ensure host can be resolved to IP
 - NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
 - Reference: https://pythontic.com/modules/socket/gethostbyname
 
+
 4) Define inputs for start and end port to scan
+
 
 5) Define portscanner
 - Create a Socket
@@ -48,10 +52,13 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 - Close the connection when complete
 - If the port is open, list it. If not, just pass and don't output any text
 
+
 6) Deine the threader
 - When the task is complete, empty the Q created
 
+
 7) Using range, input the first and last port to scan as defined by the user
+
 
 8) Create the threader
 
