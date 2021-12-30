@@ -27,3 +27,52 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 
 *"Python's standard library consists of various built-in modules that support interprocess communication and networking. The network access is available at two levels. The 'socket' module defines how server and client machines can communicate at hardware level using socket endpoints on top of the operating system"*
 - https://www.knowledgehut.com/tutorials/python-tutorial/python-socket-module
+
+
+## Writing the Code ##
+1) Import threading
+- Explained Above
+
+2) Import sockets
+- Explained Above
+
+3) Enter Host / IPv4 of target. Ensure host can be resolved to IP
+- NOTE: The code used in this project will only resolve to an IPv4 Address. If IPv6 resolution is required, use the following code: gethostbyname()
+- Reference: https://pythontic.com/modules/socket/gethostbyname
+
+4) Define inputs for start and end port to scan
+
+5) Define portscanner
+- Create a Socket
+- Connect to the Target
+- Close the connection when complete
+- If the port is open, list it. If not, just pass and don't output any text
+
+6) Deine the threader
+- When the task is complete, empty the Q created
+
+7) Using range, input the first and last port to scan as defined by the user
+
+8) Create the threader
+
+
+
+## REFERECES
+
+https://realpython.com/intro-to-python-threading/
+
+https://docs.python.org/3/library/socket.html
+
+https://www.geeksforgeeks.org/socket-programming-python/
+
+https://docs.python.org/3/library/queue.html
+
+https://www.knowledgehut.com/tutorials/python-tutorial/python-socket-module
+
+https://pythontic.com/modules/socket/gethostbyname
+
+https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.html
+
+https://www.geeksforgeeks.org/python-sys-module/
+
+https://pretagteam.com/question/portscan-with-python
