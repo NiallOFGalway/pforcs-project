@@ -41,11 +41,10 @@ def threader():
 
 for x in range(int(startport), int(endport)): # Using the range function, inputting the first and last port to scan
     thread = threading.Thread(target=threader) # Create threader. Gets ports from the portscanner
-    thread.daemon = True 
-    thread.start()
+    thread.daemon = True # Threads are either daemon or non-daemon. This defines the thread as daemon. This means that the thread runs without blocking the main program from exiting.
+    thread.start() # This starts the thread after it has been created. This was a 'head scratcher' and I could not get the program to produce any output until I eventually added this line.
 
 for portstoscan in range(int(startport), int(endport)): # Using the range function, inputting the first and last port to scan
     queue.put(portstoscan)
 
 queue.join()
-    
