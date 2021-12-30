@@ -3,8 +3,8 @@
 ## This project attempts to write a port scanner which will allow the user to enter an IP (and potentially hostname),
 ## along with either a port (or range of ports). The output will inform the user of open TCP ports on the target address / host
 
-import socket
 import threading
+import socket
 
 from queue import Queue 
 
@@ -30,7 +30,7 @@ def portscanner(port):
             print ("Port",port,"is open")
 
         con.close() # Close the connection when complete
-    except: # If the port is open, just pass... no point in wasting screen space ie. "Port is closed"
+    except: # If the port is closed, just pass... no point in wasting screen space ie. "Port is closed"
         pass
 
 def threader():
@@ -40,9 +40,9 @@ def threader():
         queue.task_done() # When the task is complete, empty out the Q
 
 for x in range(int(startport), int(endport)): # Using the range function, inputting the first and last port to scan
-    t = threading.Thread(target=threader) # Create threader. Gets ports from the portscanner
-    t.daemon = True 
-    t.start()
+    thread = threading.Thread(target=threader) # Create threader. Gets ports from the portscanner
+    thread.daemon = True 
+    thread.start()
 
 for portstoscan in range(int(startport), int(endport)): # Using the range function, inputting the first and last port to scan
     queue.put(portstoscan)
