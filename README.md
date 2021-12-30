@@ -1,6 +1,8 @@
 # Programming for CyberSecurity - Project - Niall O Flaherty 
 Port Scanner using Python
 
+NOTE: As mentioned below, this project uses 'Threading' to speed up the task. Initially, I thought that 'Threading' was simply added to the code to enable but after research and some code created, I realised I had gone down the wrong road. I have kept the README from the original code, file 'DO_NOT_USE-README.md' to show the work that had gone into this, however this file is the official readme for this project.
+
 This project aims to create a program that will allow the user to input an IP address and port number to check if the post is open on the target device. As there are 1024 (0 - 1023) known ports and a total of 65535 ports in range, this project will attempt to allow the user to enter a port range and scan the range.
 
 Furthermore, this project will attempt to use modules available in Python to allow the user to scan not just by IP, but also by host-name, by way of DNS resolution.
