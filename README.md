@@ -63,6 +63,51 @@ A basic networking definition of a Socket is: IP Address + Port = Socket. Instan
 8) Create the threader
 
 
+## Code
+```
+import threading
+import socket
+
+from queue import Queue 
+
+print_lock = threading.Lock()
+queue = Queue()
+
+targetip = input("Please enter the Hostname or IP (v4) of target to scan: ")
+
+hostipresolve = socket.gethostbyname(targetip)
+
+startport = input("Please choose first TCP port to scan: ")
+endport = input("Please enter the last TCP port to scan. Add 1 to your last port ie. if last port is 100, enter 101: ")
+
+
+def portscanner(port):
+    server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+    try:
+        con = server_sock.connect((targetip,port))
+        with print_lock:
+            print ("Port",port,"is open")
+
+        con.close() 
+    except:
+        pass
+
+def threader():
+    while True:
+        portstoscan = queue.get()
+        portscanner(portstoscan)
+        queue.task_done()
+
+for x in range(int(startport), int(endport)): 
+    thread = threading.Thread(target=threader) 
+    thread.daemon = True 
+    thread.start() 
+
+for portstoscan in range(int(startport), int(endport)): 
+    queue.put(portstoscan)
+
+queue.join()
+```
 
 ## REFERECES
 
